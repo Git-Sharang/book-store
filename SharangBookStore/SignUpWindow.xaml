@@ -1,0 +1,107 @@
+﻿<Window x:Class="SharangBookStore.SignUpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SharangBookStore"
+        mc:Ignorable="d"
+        Title="SharangBookStore - Register" Height="600" Width="1200">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFEBFFB2" Offset="0.238"/>
+                <GradientStop Color="#FF6E6BFA" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="usernameTxt"
+                 HorizontalAlignment="Left" 
+                 Height="46" 
+                 Margin="532,90,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top"
+                 Width="242" 
+                 FontFamily="Segoe UI Symbol" 
+                 FontSize="14"/>
+        <PasswordBox x:Name="passwordtxt"
+                         HorizontalAlignment="Left"
+                         VerticalAlignment="Top"
+                         Margin="532,180,0,0"
+                         PasswordChar="*"
+                         Width="242"
+                         Height="46" 
+                         FontFamily="Segoe UI Symbol" 
+                         FontSize="14" />
+        <TextBox x:Name="firstNametxt"
+                 HorizontalAlignment="Left" 
+                 Height="46" 
+                 Margin="532,274,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="242" 
+                 FontFamily="Segoe UI Symbol" 
+                 FontSize="14"/>
+        <TextBox x:Name="lastNameTxt"
+                 HorizontalAlignment="Left" 
+                 Height="46" 
+                 Margin="532,363,0,0" 
+                 TextWrapping="Wrap"  
+                 VerticalAlignment="Top" 
+                 Width="242" 
+                 FontFamily="Segoe UI Symbol" 
+                 FontSize="14"/>
+        <Label Content="Username" 
+               HorizontalAlignment="Left" 
+               Margin="385,90,0,0" 
+               VerticalAlignment="Top" 
+               FontFamily="Segoe UI Symbol"
+               FontSize="14"/>
+        <Label Name="usernameErrorLbl"
+               HorizontalAlignment="Left" 
+               Margin="794,106,0,0" 
+               VerticalAlignment="Top"
+               Width="248"/>
+        <Label Content="Password" 
+               HorizontalAlignment="Left" 
+               Margin="385,180,0,0" 
+               VerticalAlignment="Top" 
+               FontFamily="Segoe UI Symbol" 
+               FontSize="14"/>
+        <Label Name="passwordErrorLbl" 
+               HorizontalAlignment="Left" 
+               Margin="794,196,0,0" 
+               VerticalAlignment="Top" 
+               Width="248"/>
+        <Label Content="First Name" 
+               HorizontalAlignment="Left" 
+               Margin="385,274,0,0" 
+               VerticalAlignment="Top" 
+               FontFamily="Segoe UI Symbol"
+               FontSize="14"/>
+        <Label Content="Last Name" 
+               HorizontalAlignment="Left" 
+               Margin="385,363,0,0" 
+               VerticalAlignment="Top" 
+               FontFamily="Segoe UI Symbol" 
+               FontSize="14"/>
+        <Button Content="Create Account" 
+                HorizontalAlignment="Left" 
+                Margin="532,459,0,0" 
+                VerticalAlignment="Top" 
+                Width="127" 
+                Height="35" 
+                Click="Button_CreateAccount" 
+                FontFamily="Segoe UI Symbol" 
+                FontSize="14" 
+                Background="White"/>
+        <Button Content="Back" 
+                HorizontalAlignment="Left" 
+                Margin="532,525,0,0" 
+                VerticalAlignment="Top" 
+                Width="127" 
+                Height="35" 
+                Click="Button_Back" 
+                FontFamily="Segoe UI Symbol" 
+                FontSize="14" 
+                Background="White"/>
+    </Grid>
+</Window>

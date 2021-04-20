@@ -1,4 +1,4 @@
-# book-store
+# Book Store
 
 The WPF built with C# which uses AWS DynamoDB to store the books data.
 
